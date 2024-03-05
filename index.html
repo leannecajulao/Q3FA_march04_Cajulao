@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take Home Activity 2</title>
+</head>
+<body>
+    <script>
+        var numrando = Math.floor(Math.random() * 1000) + 1;
+
+        var hundreds = Math.floor(numrando/100);
+        var hundreth = hundreds*100
+        var tens = Math.floor((numrando % 100) / 10);
+        var tenth = tens*10
+        var ones = numrando % 10;
+        
+        
+        document.write("Chosen random digit: " + numrando + " ");
+        var date = new Date();
+        document.write("<br>Breakdown: " + hundreth + " " + tenth + " " + ones + "<br>" + date);
+    </script>
+</body>
+</html>
